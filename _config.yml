@@ -6,7 +6,7 @@ email: 1161952677@qq.com
 description: "Every failure is leading towards success."
 keyword: "Kunqian Zhu's, Change the World"
 url: "Zhukqian.github.io"          # your host, for absolute URL
-baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: "Zhukqian.github.io"      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "" # you code repository
 
 # Sidebar settings
