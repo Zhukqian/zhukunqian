@@ -1,7 +1,7 @@
 # Site settings
 title: Kunqian Zhu's Blog
 SEOTitle: 朱坤乾的博客 | Kunqian Zhu's Blog
-header-img: img/post-bg-desk.jpg    #主页上面的图片
+header-img: https://github.com/Zhukqian/zhukunqian.git/img/post-bg-desk.jpg    #主页上面的图片
 email: 1161952677@qq.com
 description: "Every failure is leading towards success."
 keyword: "Kunqian Zhu's, Change the World"
