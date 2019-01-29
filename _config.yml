@@ -1,70 +1,113 @@
 # Site settings
-title: 朱坤乾博客
-description: "A blog of growth ..."
-baseurl: "/space-jekyll-template" # for test: remove string '/space-jekyll-template' to ''
-url: "https://github.com/Zhukqian/zhukunqian.git" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https://yourusername.githu.io'
-
-# User settings
-username: 朱坤乾
-user_title: 一步一个脚印，一天一点进步
+title: Kunqian Zhu's Blog
+SEOTitle: 朱坤乾的博客 | Kunqian Zhu's Blog
+header-img: img/post-bg-desk.jpg    #主页上面的图片
 email: 1161952677@qq.com
-twitter_username: loremipsum
-github_username:  Zhukqian
-gplus_username:  loremipsum
-linkedin_public_url: loremipsum # Example: For public profile 'www.linkedin.com/in/john-smith', 'john-smith' is your linkedin_public_url
-disqus_username: loremipsum
-profile_picture: https://68.media.tumblr.com/93f384858e9273d5b980b418e2f2f4d5/tumblr_o5i2aybLJG1uapsfmo2_250.png
+description: "Every failure is leading towards success."
+keyword: "Kunqian Zhu's, Change the World"
+url: "Zhukqian.github.io"          # your host, for absolute URL
+baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
+github_repo: "" # you code repository
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "Change the World!"
+sidebar-avatar: /img/my-photo.jpg      # 你的头像
+
+
+
+# SNS settings   你的社交链接
+RSS: false
+weibo_username:     ""
+zhihu_username:     ""
+github_username:    Zhukqian
+jianshu_username:   ""
+twitter_username:   ""
+
+
+
 
 # Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+plugins: [jekyll-paginate]
+
+
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
 markdown: kramdown
 highlighter: rouge
-permalink: /:title/
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
 
-# html minify
-compress_html:
-  clippings: all
-  comments: all
-  endings: []
-  profile: false
 
-# Links to include in menu navigation
-links:
-  section_1:
-    - title: home
-      url: /
-      key_trigger: 1
-    - title: my posts
-      url: /posts
-      key_trigger: 2
-    - title: series
-      url: /series
-      key_trigger: 3
-    - title: tags
-      url: /tags
-      key_trigger: 4
-    - title: about me
-      url: /about
-      key_trigger: 5
-  section_2:
-    - title: github
-      url: http://www.github.com/victorvoid
-      new_tab: true
-      key_trigger: g
-    - title: twitter
-      url: http://www.twitter.com/victorvoid
-      key_trigger: t
-    - title: search
-      url: ""
-      key_trigger: s #WARNING: search only works with "s"
 
-# projects in header index
-projects:
-  - name: fluany
-    url: https://github.com/fluany/fluany
-  - name: vim-frontend
-    url: https://github.com/victorvoid/vim-frontend
-  - name: generator-capybara
-    url: https://github.com/victorvoid/generator-capybara 
+# 评论系统
+# Disqus（https://disqus.com/）
+# disqus_username: qiubaiying
 
-# exclude my node related stuff
-exclude: ['package.json', 'src', 'node_modules']
+# Gitalk
+#gitalk:
+#  enable: true    #是否开启Gitalk评论
+# clientID: f2c84e7629bb1446c1a4                            #生成的clientID
+#  clientSecret: ca6d6139d1e1b8c43f8b2e19492ddcac8b322d0d    #生成的clientSecret
+#  repo: qiubaiying.github.io    #仓库名称
+#  owner: qiubaiying    #github用户名
+# admin: qiubaiying
+#  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+
+
+# 统计
+
+# Analytics settings
+# Baidu Analytics
+#ba_track_id: b50bf2b12b5338a1845e33832976fd68
+
+# Google Analytics
+#ga_track_id: 'UA-90855596-1'            # Format: UA-xxxxxx-xx
+#ga_domain: 
+# 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
+
+
+
+
+
+# Featured Tags
+featured-tags: true                     # 是否使用首页标签
+featured-condition-size: 1              # 相同标签数量大于这个数，才会出现在首页
+
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+# Friends  友情链接
+friends: [
+    {
+        title: "CSDN",
+        href: "https://blog.csdn.net/"
+    },{
+        title: "Github",
+        herf: "https://github.com/"
+    },{
+        title: "Stackoverflow",
+        herf: "https://stackoverflow.com/"
+    }      
+]
+
+port: 4001
